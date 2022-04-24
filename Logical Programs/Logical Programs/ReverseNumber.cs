@@ -11,16 +11,15 @@ namespace Logical_Programs
         public void reversenumber()
         {
            
-            int n1 = 0, n2 = 1, n3, j, num;
-            Console.Write("Enter the Number: ");
+            int num, i, reverse = 0;
+            Console.Write("Enter a number: ");
             num = Convert.ToInt32(Console.ReadLine());
-            Console.Write(n1 + " " + n2 + " "); 
-            for (j = 2; j < num; ++j)     
+            for (i = num; i != 0; i = i / 10)
             {
-                n3 = n1 + n2;
-                Console.Write(n3 + " ");
-                n1 = n2;
-                n2 = n3;
+                num = i % 10;
+                reverse = reverse * 10 + num;
+            }
+            Console.Write("Reversed Number: " + reverse);
         }
     }
 }
