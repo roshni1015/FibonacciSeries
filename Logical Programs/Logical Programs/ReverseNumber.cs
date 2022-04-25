@@ -10,14 +10,13 @@ namespace Logical_Programs
     {
         public void reversenumber()
         {
-            int num, x, reverse = 0;
+            int num, i, reverse = 0;
             Console.Write("Enter a number: ");
             num = Convert.ToInt32(Console.ReadLine());
-            while (num != 0)
+            for (i = num; i != 0; i = i / 10)
             {
-                x = num % 10;
-                reverse = reverse * 10 + x;
-                num /= 10;
+                num = i % 10;
+                reverse = reverse * 10 + num;
             }
             Console.Write("Reversed Number: " + reverse);
         }

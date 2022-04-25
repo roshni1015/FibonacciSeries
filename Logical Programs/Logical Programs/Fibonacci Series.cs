@@ -11,7 +11,7 @@ namespace Logical_Programs
         public void FibonacciSeries()
         {
             int n1 = 0, n2 = 1, n3, j, num;
-            Console.Write("Enter the number of elements: ");
+            Console.Write("Enter the Number: ");
             num = Convert.ToInt32(Console.ReadLine());
             Console.Write(n1 + " " + n2 + " "); 
             for (j = 2; j < num; ++j)     
